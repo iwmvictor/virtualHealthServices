@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - VIRTUAL Healthcare | iwmvictor221012557</title>
+    <link rel="shortcut icon" href="https://bit.ly/3oIg2QU" type="image/x-icon">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: rgb(225,225,238);
+    user-select: none;
+}
+#home{
+    margin-left: 45vh;
+    width: calc(100% - 45vh);
+    margin-top: 0;
+}
+#header{
+    left: 0;
+    width: 45vh;
+    background: rgb(236, 235, 233);
+    height: 100%;
+    position: fixed;
+}
+.link{
+    width: 95%;
+    margin: auto;
+}
+.link img{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(12,8,40);
+    display: block;
+    padding: 16px;
+}
+
+.link a.active{
+    color: black;
+}
+.link a:hover:not(.active){
+    background: rgb(12,8,40);
+    color: white;
+}
+.more{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.more img{
+    margin-top: 10px;
+    width: 50px;
+    padding: 10px;
+}
+.more a{
+    border: 1px solid rgb(12,8,40);
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(12,8,40);
+    font-size: 26px;
+    padding: 5px 15px;
+    margin: 10px;
+}
+.more a:hover{
+    background: rgb(12,8,40);
+    color: white;
+}
+.social{
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+.social img{
+    width: 30px;
+    padding: 3px;
+}
+.service-col .subtitle{
+    font-size: 32px;
+    text-align: center;
+    color: rgb(97, 90, 143);
+    padding-top: 30px;
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(225,225,238);
+    padding-bottom: 5px;
+    text-align: left;
+}
+.subtitle{
+    font-size: 42px;
+    text-align: center;
+    color: rgb(12,8,40);
+    padding-top: 30px;
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(225,225,238);
+    padding-bottom: 5px;
+}
+.container{
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+  .service-row{
+    width: 70%;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-around;
+    background: rgb(236, 235, 233);
+    margin-top: 20px;
+}
+.row-1{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.main-service{
+    flex-basis: 30%;
+    background: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px 0 rgb(236,235,233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subtext{
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(97, 90, 143);
+}
+.service-col{
+    flex-basis: 48%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.service-col img{
+    width: 230px;
+    height: 130px;
+}
+.service-col a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.service-col a:hover{
+    text-decoration: underline;
+}
+
+.text{
+    background: rgb(236, 235, 233);
+    padding: 20px;
+}
+.text p{
+    padding: 5px;
+}
+
+#footer{
+    width: 100%;
+    margin-top: 40px;
+    background: white;
+    box-shadow: inset 0 0 6px 0 rgb(225,225,238);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .copyright{
+    flex-basis: 30%;
+    float: left;
+}
+#footer .footer-link{
+    flex-basis: 40%;
+    text-align: right;
+    padding: 5px;
+}
+.links a{
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 17px;
+    padding: 10px 6px;
+}
+.links a:hover{
+    color: rgb(12,8,40);
+    background: rgb(255,255,238);
+}
+.footer-link .social-media a img{
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/*  Back to top button */
+#myBtn {
+display: none; 
+position: fixed; 
+bottom: 20px; 
+right: 30px;
+z-index: 99; 
+border: none; 
+outline: none;
+background-color: rgb(12,8,40); 
+color: white;
+cursor: pointer;
+padding: 15px; 
+border-radius: 10px; 
+font-size: 18px; 
+}
+
+#myBtn:hover {
+background-color: rgb(97, 90, 143); 
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="link">
+                <img draggable="false" onContextMenu="return false;" src="images/logo.png" alt="vhs.logo">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="service.html">OUR SERVICES</a>
+                <a href="pharmacy.html">OUR PHARMACIES</a>
+                <a href="index.html#offer">OFFERS</a>
+                <a href="contact.html">CONTACT</a>
+            </div><hr>
+            <div class="more">
+                <img draggable="false" onContextMenu="return false;" src="images/rwanda.png">
+                <br><a href="tel:+250781996271">CALL US</a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/iwmvictor/"><img onContextMenu="return false;" draggable="false" src="images/instagram.png"></a>
+                <a href="https://bit.ly/3bg6rOl"><img onContextMenu="return false;" draggable="false" src="images/youtube.png"></a>
+                <a href="https://www.twitter.com/iwmvictor/"><img onContextMenu="return false;" draggable="false" src="images/twitter.png"></a>
+                <a href="https://wa.me/+250781996271/"><img onContextMenu="return false;" draggable="false" src="images/whatsapp.png"></a>
+            </div>
+        </div>
+    </div>
+    <div id="home">
+        <div class="container">
+            <h1 class="subtitle">OUR SERVICES</h1>
+            <div class="row-1">
+                <div class="main-service">
+                    <img src="">
+                    <h1 class="subtext">Consultation Service</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto at accusamus earum facilis unde nostrum deleniti iste soluta laborum animi pariatur quas esse placeat, error est quasi. Sit, odit optio?</p>
+                </div>
+                <div class="main-service">
+                    <img src="">
+                    <h1 class="subtext">Pharmaceutic Store</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto at accusamus earum facilis unde nostrum deleniti iste soluta laborum animi pariatur quas esse placeat, error est quasi. Sit, odit optio?</p>
+                </div>
+                <div class="main-service">
+                    <img src="">
+                    <h1 class="subtext">Medical Delivery Service</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto at accusamus earum facilis unde nostrum deleniti iste soluta laborum animi pariatur quas esse placeat, error est quasi. Sit, odit optio?</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="row">
+                    <div class="service-col">
+                        <img draggable="false" oncontextmenu="return false" src="images/serviceImg-1.png">
+                    </div>
+                    <div class="service-col">
+                        <h1 class="subtitle">DENTAL</h1>
+                        <a href="">Learn More ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="row">
+                    <div class="service-col">
+                        <img draggable="false" oncontextmenu="return false" src="images/serviceImg-2.png">
+                    </div>
+                    <div class="service-col">
+                        <h1 class="subtitle">INTERNAL MEDICINES</h1>
+                        <a href="">Learn More ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="row">
+                    <div class="service-col">
+                        <img draggable="false" oncontextmenu="return false" src="images/serviceImg-3.png">
+                    </div>
+                    <div class="service-col">
+                        <h1 class="subtitle">AESTHETICS</h1>
+                        <a href="">Learn More ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="row">
+                    <div class="service-col">
+                        <img draggable="false" oncontextmenu="return false" src="images/serviceImg-4.png">
+                    </div>
+                    <div class="service-col">
+                        <h1 class="subtitle">PEDIATRICS</h1>
+                        <a href="">Learn More ></a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="copyright">
+                    <h2>HEALTH CALL</h2>
+                    <p>Copyright © 2022 All rights reserved</p>
+                </div>
+                <div class="footer-link">
+                    <div class="links">
+                        <a href="index.html">HOME</a>
+                        <a href="pharmacy.html">PHARMACIES</a>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.twitter.com/iwmvictor/"><img onContextMenu="return false;" draggable="false" src="images/twitter.png"></a>
+                        <a href="https://bit.ly/3bg6rOl"><img onContextMenu="return false;" draggable="false" src="images/youtube.png"></a>
+                        <a href="https://www.instagram.com/iwmvictor/"><img onContextMenu="return false;" draggable="false" src="images/instagram.png"></a>
+                        <a href="https://wa.me/+250781996271"><img onContextMenu="return false;" draggable="false" src="images/whatsapp.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!--back to top button-->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+        </div>
+    </div>
+
+    <script>
+        //Get the button:
+    mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+</body>
+</html>
